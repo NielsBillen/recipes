@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Paprikapaella met kip</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../recipe.css" type="text/css">
+        <script src="../ingredients.js" defer></script>
+    </head>
+    <body>
+        <section id = "recipe-banner" style = "background-image: url('picture.jpg');">
+            <header id = "recipe-header">
+                <h1 id = "recipe-title">Paprikapaella</h1>
+                <h2 id = "recipe-subtitle">met kip</h2>
+            </header>
+        </section>
+        <article id = "recipe">
+            <section id = "ingredients">
+                <header>
+                    <h3>Ingredi&euml;nten:</h3>
+                </header>
+                <div id = "people-control">
+                    <button class = "people-button" onclick =" Ingredients.decrease();">-</button>
+                    <div id = "people">4 personen</div>
+                    <button class = "people-button" onclick =" Ingredients.increase();">+</button>
+                </div>
+                <ul class = "ingredients-list">
+                    <li><span class= "ingredient" type = "weight" amount = "400">400g</span> kipfilet</li>
+                    <li><span class= "ingredient" type = "amount" amount = "2">2</span> ajuinen</li>
+                    <li><span class= "ingredient" type = "amount" amount = "2">2</span> tenen knoflook</li>
+                    <li><span class= "ingredient" type = "amount" amount = "1">1</span> eetlepel olijfolie</li>
+                    <li><span class= "ingredient" type = "amount" amount = "4">4</span> paprika's (diverse kleuren)</li>
+                    <li><span class= "ingredient" type = "weight" amount = "300">300g</span> paellarijst</li>
+                    <li><span class= "ingredient" type = "volume" amount = "700">700ml</span> kippenboullion</li>
+                    <li><span class= "ingredient" type = "weight" amount = "250">250</span> kerstomaten</li>
+                </ul>
+            </section>
+            <section id = "preperation">
+                <header>
+                    <h3>Bereiding:</h3>
+                </header>
+                <ul>
+                    <li>Maak de kippenboullion:
+                        <ul>
+                            <li>Vul een pan met <span class= "ingredient" type = "volume" amount = "700">700ml</span> water;</li>
+                            <li>Voeg de bouillionblokes toe (hoeveelheid zie verpakking);</li>
+                            <li>Laat de bouillionblokjes al roerend oplossen.</li>
+                        </ul>
+                    </li>
+                    <li>Snij de kipfilet in reepjes;</li>
+                    <li>Versnipper de ajuin;</li>
+                    <li>Snij de knoflook fijn;</li>
+                    <li>Bak de kip, ajuin en knoflook in een pan met olijfolie;</li>
+                </ul>
+            </section>
+        </article>
+    </body>
+</html>

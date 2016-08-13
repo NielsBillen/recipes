@@ -1,0 +1,269 @@
+/*****************************************************************************
+ * FONT FACE declarations
+ *****************************************************************************/
+
+@font-face {
+    font-family: handwritten;
+    src: url("fonts/PoiretOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: recipe;
+    src: url("fonts/ReemKufi-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: recipe;
+    font-size: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-image: url("images/wood.jpg");
+    background-repeat: repeat;
+}
+
+/*****************************************************************************
+ * HEADER sizes
+ *****************************************************************************/
+
+h1 {
+    margin: 1rem 1rem;
+    font-size: 5rem;
+}
+
+h2 {
+    margin: 1rem 1rem;
+    font-size: 3rem;
+}
+
+h3 {
+    margin: 0.5rem 0.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 256px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+ul {
+    margin: 0.5rem 0.5rem;
+}
+
+/*****************************************************************************
+ *
+ *****************************************************************************/
+
+#recipe-banner {
+    background-size: cover;
+    background-position: center;
+        
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #recipe-banner {
+        min-height: 20rem;
+    }
+}
+
+#recipe-header {
+    color: black;
+    font-family: handwritten;
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+#recipe-title {
+    margin: 0;
+}
+
+#recipe-subtitle {
+    margin: 0;
+    color: darkgray;
+}
+/*****************************************************************************
+ *
+ *****************************************************************************/
+
+#people-control {
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0.5rem;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+}
+
+#people {    
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.people-button {    
+    background-color: rgb(128,128,128);
+    border-radius: 1rem;
+    border: none;
+    
+    color: white;
+    font-family: recipe;
+    font-size: 1rem;
+    text-align: center;
+    
+    padding: 1rem 2rem;
+    
+    cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+    #people-control {
+        flex-direction: column;
+    }
+    
+    .people-button {
+        flex-grow: 1;
+    }
+}
+
+/*****************************************************************************
+ * RECIPE
+ *****************************************************************************/
+
+#recipe {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+    #recipe {    
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/*****************************************************************************
+ * INGREDIENTS
+ *****************************************************************************/
+
+#ingredients {
+    color: white;
+    
+    background-color: #6CBB87;
+    
+    margin: 1rem;
+    padding: 1rem 2rem;
+    
+    box-shadow: 0.3rem 0.3rem 1rem gray;
+}
+
+.ingredients-list {
+    list-style-position: outside;
+}
+
+@media screen and (max-width: 1024px) {
+    #ingredients {
+        border-radius: 0;
+        margin: 0;
+        padding: 1rem;
+        box-shadow: none;
+    }
+    
+    .ingredients-list {
+        columns: 2;
+        list-style-position: inside;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ingredients-list {
+        columns: 1;
+        list-style-position: outside;
+    }
+}
+
+/*****************************************************************************
+ * PREPARATION
+ *****************************************************************************/
+
+#preperation {
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem 2rem;
+        
+    background-color: white;
+
+    box-shadow: 0.3rem 0.3rem 0.3rem gray;
+}
+
+@media screen and (max-width: 1024px) {
+    #preperation {    
+        border-radius: 0;
+        margin: 0;
+        padding: 1rem;
+        box-shadow: none;
+    }
+}

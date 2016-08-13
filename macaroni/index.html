@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Macaroni met kaas en ham</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../recipe.css" type="text/css">
+        <script src="../ingredients.js" defer></script>
+    </head>
+    <body>
+        <section id = "recipe-banner" style = "background-image: url('picture.jpg');">
+            <header id = "recipe-header">
+                <h1 id = "recipe-title">Macaroni</h1>
+                <h2 id = "recipe-subtitle">met kaas en ham</h2>
+            </header>
+        </section>
+        <article id = "recipe">
+            <section id = "ingredients">
+                <header>
+                    <h3>Ingredi&euml;nten:</h3>
+                </header>
+                <div id = "people-control">
+                    <button class = "people-button" onclick =" Ingredients.decrease();">-</button>
+                    <div id = "people">4 personen</div>
+                    <button class = "people-button" onclick =" Ingredients.increase();">+</button>
+                </div>
+                <ul class="ingredients-list">
+                    <li><span class="ingredient" people="2" type="weight" amount="225">450g</span> macaroni</li>
+                    <li><span class="ingredient" people="2" type="weight" amount="150">300g</span> gekookte ham</li>
+                    <li><span class="ingredient" people="2" type="weight" amount="200">400g</span> gemalen kaas</li>
+                    <li><span class="ingredient" people="2" type="amount" amount="2.5">5</span> ei(eren)</li>
+                    <li><span class="ingredient" people="2" type="weight" amount="15">30g</span> boter</li>
+                    <li><span class="ingredient" people="2" type="weight" amount="20">40g</span> bloem</li>
+                    <li><span class="ingredient" people="2" type="volume" amount="300">600ml</span> melk</li>
+                    <li><span class="ingredient" people="2" type="volume" amount="500">1000ml</span> room</li>
+                    <li><span class="ingredient" people="2" type="amount" amount="0.25">0.5</span> citroen(en)</li>
+                    <li>nootmuskaat</li>
+                    <li>peper</li>
+                    <li>zout</li>
+                </ul>
+            </section>
+            <section id = "preperation">
+                <header>
+                    <h3>Bereiding:</h3>
+                </header>
+                <ul>
+                    <li>Kook de eieren 8 &agrave; 9 minuten in water (hardgekookt);</li>
+                    <li>Kook de macaroni beetgaar (al dente) in water met veel zout;</li>
+                    <li>
+                        Maak een roux:
+                        <ul>
+                            <li>Smelt de boter in een kookpot op een matig vuur;</li>
+                            <li>Voeg de bloem toe;</li>
+                            <li>Laat het bloemmengsel al roerend opdrogen totdat je een biscuit-geur ruikt.</li>
+                        </ul>
+                    </li>
+                    <li>Schenk melk bij de roux op een zachter vuur;</li>
+                    <li>Voeg al roerend de room toe;</li>
+                    <li>Blijf roeren totdat de saus bindt en je een gladde becharnelsaus krijgt;</li>
+                    <li>Haal de saus van het vuur. Voeg de gemalen kaas toe en kruid met nootmuskaat, peper en zout;</li>
+                    <li>Pel en plet de hardgekookte eieren en voeg toe aan de saus;</li>
+                    <li>Snij de gekookte ham in plakjes (of blokjes) en voeg toe aan de saus;</li>
+                    <li>Meng de saus en de macaroni in een ovenschaal en strooi er gemalen kaas over;</li>
+                    <li>Grill de ovenschaal in de oven tot de kaas een goudbruin korstje heeft.</li>
+                </ul>
+            </section>
+        </article>
+    </body>
+</html>
