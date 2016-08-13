@@ -40,12 +40,12 @@ body {
 
 h1 {
     margin: 1rem 1rem;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 h2 {
     margin: 1rem 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h3 {
@@ -86,7 +86,7 @@ h3 {
 
 @media screen and (max-width: 384px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -133,9 +133,11 @@ ul {
 
 #recipe-title {
     margin: 0;
+    display: inline;
 }
 
 #recipe-subtitle {
+    display: inline;
     margin: 0;
     color: darkgray;
 }
